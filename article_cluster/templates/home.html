@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    
+
+    <form method="POST" autocomplete="off" id="my_form">
+        <p class="form-group mr-3 mb-3">
+            <label for="keyword">Enter your article</label>
+            <input type="text" class="form-control" id="keyword" placeholder="Enter your article" name="keyword">
+        </p>
+        
+        <p class="text-right">
+            <button type="submit" class="btn btn-success">Get cluster</button>
+        </p>
+    </form>
+
+    {% if page_content == 'outcome' %}
+    
+        <p>The model predicts that your article belongs to "{{ outcome }}" cluster...</p>
+
+    {% endif %}
+
+
+{% endblock content %}
