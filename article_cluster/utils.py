@@ -1,7 +1,8 @@
 import string
 import pickle
 import nltk
-nltk.download('all')
+nltk.download('stopwords')
+nltk.download('punkt')
 
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
